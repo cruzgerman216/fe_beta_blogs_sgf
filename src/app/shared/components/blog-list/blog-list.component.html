@@ -10,7 +10,7 @@
         <p>{{ blog.content }}</p>
       </div>
       <img
-        src="https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/08/how-to-become-a-programmer.jpg"
+        [src]="blog.cover_image_url || 'https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/08/how-to-become-a-programmer.jpg'"
         alt="blog image"
         class="blog-image"
       />

@@ -14,7 +14,7 @@ export class BlogService {
 		return this.http.get<Blog[]>(`${environment.apiUrl}/blogs`);
 	}
 
-  createBlog(blog: Blog): Observable<Blog> {
+  createBlog(blog: FormData): Observable<Blog> {
     return this.http.post<Blog>(`${environment.apiUrl}/blogs`, blog);
   }
 }
